@@ -1,0 +1,29 @@
+{
+  "name": "api-test-run",
+  "version": "1.0.1",
+  "description": "Setup API test in progress",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jide-oginni/API-Test.git"
+  },
+  "author": "jide-oginni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jide-oginni/API-Test/issues"
+  },
+  "homepage": "https://github.com/jide-oginni/API-Test#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "typescript": "^3.0.1"
+  },
+  "dependencies": {
+    "@types/api-test": "0.0.29",
+    "api-test": "^4.1.0"
+  }
+}
