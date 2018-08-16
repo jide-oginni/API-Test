@@ -1,29 +1,35 @@
 {
-  "name": "api-test-run",
-  "version": "1.0.1",
-  "description": "Setup API test in progress",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "name": "api-test",
+  "version": "0.0.1",
+  "description": "Api setup test",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chai": "^4.1.2",
+    "express": "^4.16.3",
+    "typescript": "^3.0.1"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "should": "^13.2.3",
+    "supertest": "^3.1.0"
+  },
   "scripts": {
-    "build": "tsc"
+    "test": "mocha",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jide-oginni/API-Test.git"
   },
-  "author": "jide-oginni",
+  "author": "jide oginni <j.oginni@fairfx.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jide-oginni/API-Test/issues"
   },
-  "homepage": "https://github.com/jide-oginni/API-Test#readme",
-  "devDependencies": {
-    "chai": "^4.1.2",
-    "mocha": "^5.2.0",
-    "typescript": "^3.0.1"
-  },
-  "dependencies": {
-    "@types/api-test": "0.0.29",
-    "api-test": "^4.1.0"
-  }
+  "homepage": "https://github.com/jide-oginni/API-Test#readme"
 }
